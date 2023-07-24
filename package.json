@@ -33,6 +33,7 @@
     "node": ">=6.0.0"
   },
   "readmeFilename": "README.md",
+  "prettier": "prettier-config-ljlx",
   "thinkjs": {
     "metadata": {
       "name": "think-server",

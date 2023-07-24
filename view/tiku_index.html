@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>bootstrap</title>
+    <link rel="shortcut icon" href="favicon.png" />
+    <style></style>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="content">
+      <button type="button" class="btn btn-primary">Primary</button>
+      <div id="root"></div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/react/18.2.0/umd/react.development.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/react-dom/18.2.0/umd/react-dom.development.min.js"></script>
+
+    <script>
+      var root1 = `
+        <ul className="my-list">
+          <li>First Text Content</li>
+          <li>Second Text Content</li>
+        </ul>
+      `;
+      React.createElement()
+      //创建一个React元素
+      const div = React.createElement('div', {}, '我是React创建的div');
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(div);
+    </script>
+  </body>
+</html>
